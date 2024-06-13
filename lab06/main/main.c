@@ -6,6 +6,7 @@
 #include "esp_timer.h"
 
 #include "config.h"
+#include "joy.h"
 #include "lcd.h"
 #include "cursor.h"
 #include "pin.h"
@@ -18,7 +19,7 @@
 
 #define CURSOR_SZ 7 // Cursor size (width & height) in pixels
 
-static const char *TAG = "lab05";
+static const char *TAG = "lab06";
 
 TFT_t dev; // Declare device handle for the display
 TimerHandle_t update_timer; // Declare timer handle for update callback
@@ -104,7 +105,7 @@ void app_main(void)
 		gameControl_tick();
 		cursor_tick();
 		cursor_get_pos(&x, &y);
-#ifdef CONFIG_ERASE
+#if 0
 		static int32_t lx = -1, ly = -1;
 		if (x != lx || y != ly) {
 			cursor(lx,  ly, CONFIG_COLOR_BACKGROUND);

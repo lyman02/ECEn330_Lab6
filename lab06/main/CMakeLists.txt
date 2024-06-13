@@ -1,4 +1,4 @@
-idf_component_register(SRCS "main.c" "gameControl.c" "missile.c" "plane.c"
+idf_component_register(SRCS "main.c" "gameControl.c" "apple.c" "snake.c"
                        INCLUDE_DIRS "." "../../components"
                        )
 # PRIV_REQUIRES "..."

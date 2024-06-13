@@ -48,6 +48,7 @@ void cursor_tick(void)
 	xpos += dcx*sfactor;
 	ypos += dcy*sfactor;
 
+
 	// Clip new position to screen.
 	xpos = CLIP(xpos, 0, LCD_W-1);
 	ypos = CLIP(ypos, 0, LCD_H-1);
