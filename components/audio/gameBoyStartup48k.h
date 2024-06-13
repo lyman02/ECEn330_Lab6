@@ -1,0 +1,8 @@
+
+#include <stdint.h>
+
+#define GAMEBOYSTARTUP48K_BITS_PER_SAMPLE 8
+#define GAMEBOYSTARTUP48K_SAMPLE_RATE 48000
+#define GAMEBOYSTARTUP48K_SAMPLES 105488
+
+const uint8_t gameBoyStartup48k[];
