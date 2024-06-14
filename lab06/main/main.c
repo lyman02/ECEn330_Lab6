@@ -12,6 +12,7 @@
 #include "pin.h"
 #include "btn.h"
 #include "gameControl.h"
+#include "apple.h"
 
 // The update period as an integer in ms
 #define PER_MS ((uint32_t)(CONFIG_GAME_TIMER_PERIOD*1000))
